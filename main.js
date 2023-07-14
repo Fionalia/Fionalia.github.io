@@ -21,11 +21,12 @@ var gameData = {
   }
 
   function wedding() {
-    if (gameData.Salay >= 10000) {
-      gameData.Salay -= 10000
+    if (gameData.Salay >= 100) {
+      gameData.Salay -= 100
       gameData.married = true
       document.getElementById("MarriageText").style.visibility = "visible"
       document.getElementById("Marriage").style.visibility = "hidden"
+      gameData.SalayPerSalay += 10000
     }
   }
   
