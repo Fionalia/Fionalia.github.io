@@ -16,7 +16,7 @@ var gameData = {
       gameData.SalayPerSalay += 1
       gameData.AwstenKnightMusicCost *= 2
       document.getElementById("SalaysDone").innerHTML = gameData.Salay + " Salay Points"
-      document.getElementById("perClickUpgrade").innerHTML = "Listen to Awsten Knight (Currently listened to " + gameData.SalayPerSalay + "songs) Cost: " + gameData.AwstenKnightMusicCost + " Salay Points"
+      document.getElementById("perClickUpgrade").innerHTML = "Listen to Awsten Knight (Currently listened to " + gameData.SalayPerSalay + " songs) Cost: " + gameData.AwstenKnightMusicCost + " Salay Points"
     }
   }
 
