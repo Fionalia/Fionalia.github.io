@@ -21,10 +21,11 @@ class Banner {
 
 // Sample characters and banners
 const Characters = [
-    new Character('Zach', 5, false, false, 1, 0),
-    new Character('Zuri', 4, false, false, 1, 0),
-    new Character('Zaraya', 3, false, false, 0, 0),
-    new Character('Bob', 5, false, false, 2, 0)
+    new Character('Jordan', 5, false, false, 1, 0),
+    new Character('Alex', 4, false, false, 1, 0),
+    new Character('Cassandra', 3, false, false, 0, 0),
+    new Character('Elizabeth', 5, false, false, 2, 0),
+    new Character('Murakami', -5, false, false, 0, 0)
 ];
 
 const Banners = [
