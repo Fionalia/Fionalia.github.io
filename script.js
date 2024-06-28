@@ -25,7 +25,7 @@ const Characters = [
     new Character('Alex', 4, false, false, 1, 0),
     new Character('Cassandra', 3, false, false, 0, 0),
     new Character('Elizabeth', 5, false, false, 2, 0),
-    new Character('Murakami', -5, false, false, 0, 0)
+    new Character('Murakami', 9, false, false, 0, 0)
 ];
 
 const Banners = [
@@ -92,13 +92,14 @@ let currentBanner = Banners[0]; // Set to Basic initially
 function createWeightedArray(arr) {
     let weightedArray = [];
     arr.forEach(character => {
-        const weight = 6 - character.stars; // Higher stars mean lower weight
+        const weight = Math.max(1, 10 - character.stars); // Adjusted weight calculation
         for (let i = 0; i < weight; i++) {
             weightedArray.push(character);
         }
     });
     return weightedArray;
 }
+
 
 // Function to perform a weighted random selection
 function gamble(arr) {
