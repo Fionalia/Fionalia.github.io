@@ -416,6 +416,18 @@ function update() {
     }, 100);
 }
 
+function autoPull() {
+   document.getElementById('autoPull').innerHTML = "Auto Pulling"
+   intervalID = setInterval(multiPull, 5000); 
+   document.getElementById('autoPull').onclick = stopPull;
+}
+
+function stopPull() {
+    document.getElementById('autoPull').innerHTML = "Auto x10 Pull!";
+    clearInterval(intervalID);
+    document.getElementById('autoPull').onclick = autoPull;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     update();
 });
