@@ -24,10 +24,19 @@
     </style>
 </head>
 <body>
-    <h1>Gacha Pulling Simulator v0.8</h1>
-    <div class="row">
+    <h1>Gacha Pulling Simulator v0.9</h1>
+    <button id="beamer" style="visibility: hidden;" onclick="boop()">Gimmie Gimmie</button>
+    <p id="tidesAmount">Tides: 100</p>
+    <div class="row" id="main">
         <div class="column">
-            <p id="collectionOutput"></p>
+            <p id="pullResult"><br></p>
+            <br>
+            <button onclick="watchAd()">Watch an Advertisement for more Tides!</button>
+            <button onclick="buyTides()">Spend $10 on Tides! (100 Tides)</button>
+            <br>
+            <p id="TPS">You are getting X tides per second!</p>
+            <br>
+            <p id="collectionOutput">=== My Collection ===</p>
         </div>
         <div class="column">
             <h3 id="CB">Current Banner: Basic</h3>
@@ -36,11 +45,10 @@
             <br>
             <br>
             
-            <button onclick="pull()">Pull from this banner!</button>
+            <button onclick="singlePull()">Pull x1 from this banner! (10 Tides)</button>
+            <button onclick="multiPull()">Pull x10 from this banner! (100 Tides)</button>
+
         </div>
     </div>
-
-
-    
 </body>
 </html>
